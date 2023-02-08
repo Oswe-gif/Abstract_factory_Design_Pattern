@@ -1,3 +1,3 @@
-public interface IPoster {
+public interface Poster {
     String versionPoster();
 }

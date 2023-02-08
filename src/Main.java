@@ -1,18 +1,18 @@
 public class Main {
 
     public static void main(String[] args) {
-        Cliente cliente1 = new Cliente(new PrimeraVersionFactory());
-        Cliente cliente2 = new Cliente(new SegundaVersionFactory());
+        Client client1 = new Client(new FirstVersionFactory());
+        Client client2 = new Client(new SecondVersionFactory());
 
         //cliente compro la edición 1 del libro
-        ILibro libroCliente1=cliente1.version.crearLibro("El retrato de Dorian Gray");
-        IPoster posterCliente1=cliente1.version.crearPoster();
-        System.out.println(libroCliente1.versionLibro()+" "+libroCliente1.cantidadPaginas()+";"+posterCliente1.versionPoster());
+        Book bookCliente1 =client1.version.createBook("El retrato de Dorian Gray");
+        Poster posterCliente1=client1.version.createPoster();
+        System.out.println(bookCliente1.bookVersion()+" "+ bookCliente1.numberOfPagina()+";"+posterCliente1.versionPoster());
 
         //cliente compro la edición 2 del libro
-        ILibro libroCliente2 = cliente2.version.crearLibro("El retrato de Dorian Gray");
-        IPoster posterCliente2 = cliente2.version.crearPoster();
-        System.out.println(libroCliente2.versionLibro()+" "+libroCliente2.cantidadPaginas()+"; "+posterCliente2.versionPoster());
+        Book bookCliente2 = client2.version.createBook("El retrato de Dorian Gray");
+        Poster posterCliente2 = client2.version.createPoster();
+        System.out.println(bookCliente2.bookVersion()+" "+ bookCliente2.numberOfPagina()+"; "+posterCliente2.versionPoster());
 
     }
 }
