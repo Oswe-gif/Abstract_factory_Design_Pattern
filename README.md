@@ -1,2 +1,2 @@
-# abstractFactory
+# Problematica a solucionar
 Problema: Actualmente mis padres tienen una librería quienes ofrecen diferentes ediciones de un mismo libro. Sin embargo, cada ediciones del mismo libro cuenta con diferentes cantidad de paginas y pequeñas modificaciones (para simplificar el problema habrán 2 versiones del mismo libro). Cuando un cliente compra un libro se le da como regalo un poster de la misma versión del libro. Mis padres desean un software que sea capaz de crear "familias" de los productos de acuerdo a sus versiones de libro. Por ejemplo: Pepe compro un libro de edición 1, por ende va a recibir un poster de edición 1. Sin embargo, si Pepe hubiera comprado un libro de edición 2, habría recibido un poster de edición 2.
